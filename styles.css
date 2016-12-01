@@ -33,17 +33,21 @@ img{
 	background-image: url('fb_sprite.png');
 	background-size: 26px 905px;
 	background-position: 0px -163px;
+	border-radius: 3px;
 }
 
 #fb-logo, #fb-search{
 	float: left;
 	margin-left: 5px;
+	border-radius: 3px;
 }
 
 #fb-search input{
 	border-radius:  0px;
 	width: 400px;
-	height: 17px;
+	height: 18px;
+	font-family: helvetica;
+	border-radius: 3px;
 	font-family: helvetica;
 
 }
@@ -250,6 +254,8 @@ body{
 	background-color: #E9EBEE;
 	width: 100%
 	max-width: 900px;
+	color: #3B5998;
+	font-family: helvetica-bold;
 }
 
 #intro-box{
@@ -260,14 +266,37 @@ body{
 	margin-top: 15px;
 	border: solid #E0C9BB 1px;
 }
+	
+	#foreword{
+		border-bottom: solid #E0C9BB 1px;
+		font-family: helvetica-bold;
+		margin-top: 10px;
+		margin-left: 10px;
+		margin-bottom: 10px;
+		padding-bottom: 10px;
+		width: 330px;
+	}
+	
+	.intro-item{
+	display: block;
+	padding: 10px;
+	list-style-type: none;
+	color: #3B5998;
+	font-family: helvetica;
+	font-size: 12px;
+}
+
+
 
 #status-box{
 	float: right;
 	background-color: white;
 	width: 512px;
-	height: 151px;
+	height: 180px;
 	margin-top: 15px;
 	border: solid #E0C9BB 1px;
+	color: #3B5998;
+	font-family: helvetica-bold;
 }
 
 	#mid-avatar{
@@ -278,7 +307,7 @@ body{
 	}
 	
 	#status-type{
-		border: solid #E0C9BB 1px;
+		border-bottom: solid #E0C9BB 1px;
 		margin: auto;
 		margin: 5px;
 		padding: 5px;
@@ -291,31 +320,63 @@ body{
 	#prompt-text{
 		display: inline-block;
 		margin: 10px;
-		vertical-align: bottom;
+		margin-bottom: 3px;
+		vertical-align: top;
 	}
 	
 	#actions{
 		float: right;
-		border: solid #E0C9BB 1px;
-		clear: both;
-		margin: 10px;
-		border: solid #E0C9BB 1px;
+		border-top: solid #E0C9BB 1px;
+		margin-right: 15px;
+		width: 490px;
 	}
 
-
-
-
+		#action-buttons{
+			float: right;
+		}
 
 #photo-box{
 	float: left;
 	clear: left;
+	height: 200px;
+	width: 360px;
 	background-color: white;
+	margin-top: 15px;
+	border: solid #E0C9BB 1px;
+	font-family: helvetica-bold;
+}
+
+#photo-inner{
+	margin: 20px;
+}
+
+#friends-box{
+	float: left;
+	clear: left;
+	height: 200px;
+	width: 360px;
+	background-color: white;
+	margin-top: 15px;
+	border: solid #E0C9BB 1px;
+	font-family: helvetica-bold;
+}
+#friends-inner{
+	margin: 20px;
 }
 
 #timeline-box{
 	float: right;
-	clear: right;
 	background-color: white;
+	width: 512px;
+	height: 800px;
+	margin-top: 15px;
+	border: solid #E0C9BB 1px;
+	color: #3B5998;
+	font-family: helvetica-bold;
+}
+
+#timeline-inner{
+	margin: 20px;
 }
 
 #friends-box{
@@ -328,7 +389,17 @@ body{
 
 
 
-
+#footer{
+	position: relative;
+	float: left;
+	background-color: #3B5998;
+	overflow: hidden;
+	width: 100%;
+	height: 43px;
+	margin: auto;
+	margin-top: 10px;
+	vertical-align: bottom;
+}
 
 
 
